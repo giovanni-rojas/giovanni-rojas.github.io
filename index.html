@@ -20,7 +20,7 @@
 
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -29,7 +29,7 @@
           <span class="h3 fw-bold d-block d-lg-none">Giovanni Rojas</span>
           <img src="/assets/img/profile2.jpg" class="d-none d-lg-block rounded-circle" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,19 +62,119 @@
     <div id="content-wrapper">
     
       <!-- HOME -->
-      <section id="about">
+      <section id="about" class="full-height px-lg-5">
+
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
-              <h1 class="mb-0">Giovanni
+            <div class="col-lg-10">
+              
+              <h1 class="display-4 fw-bold" data-aos="fade-up">Giovanni
                 <span class="text-primary">Rojas</span>
               </h1>
-              <p class="mb-4">Focused on creating high-impact software by combining a strong analytical approach with tech savvy and a drive for continuous learning and improvement.</p>
+              
+              <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Focused on creating high-impact software by combining a strong analytical approach with tech savvy and a drive for continuous learning and improvement.</p>
+              
+              <div data-aos="fade-up" data-aos-delay="600">
+                <a href="https://www.linkedin.com/in/giorojas/" class="btn btn-bran me-3">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                
+                <a href="https://github.com/giovanni-rojas">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
+
       </section>
       <!-- //HOME -->
+
+      <!-- PROJECTS -->
+      <section id="projects" class="full-height px-lg-5">
+
+        <div class="container">
+
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h1 class="display-4 fw-bold">Projects</h1>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <!-- Do I need an icon? -->
+                </div>
+                <h5 class="mt-4 mb-2">FaceFind</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo asperiores quasi esse, unde voluptatem tempora ullam odit magni iure ratione natus a iste libero dolore accusantium, placeat provident assumenda.  </p>
+                <a href="#" class="link-custom">See Code</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <!-- Do I need an icon? -->
+                </div>
+                <h5 class="mt-4 mb-2">SpeedTester</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo asperiores quasi esse, unde voluptatem tempora ullam odit magni iure ratione natus a iste libero dolore accusantium, placeat provident assumenda.  </p>
+                <a href="#" class="link-custom">See Code</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <!-- Do I need an icon? -->
+                </div>
+                <h5 class="mt-4 mb-2">SpeedRun</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo asperiores quasi esse, unde voluptatem tempora ullam odit magni iure ratione natus a iste libero dolore accusantium, placeat provident assumenda.  </p>
+                <a href="#" class="link-custom">See Code</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- //PROJECTS -->
+        
+      <!-- WORK EXPERIENCE -->
+      <section id="experience" class="full-height px-lg-5">
+
+        <div class="container">
+
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h1 class="display-4 fw-bold">Work Experience</h1>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- //WORK EXPERIENCE -->
+
+      <!-- EDUCATION -->
+      <!-- //EDUCATION -->
+
+      <!-- SKILLS -->
+      <!-- //SKILLS -->
+
+      <!-- INTERESTS -->
+      <!-- //INTERESTS -->
+
 
     </div>
      <!-- //CONTENT WRAPPER -->
