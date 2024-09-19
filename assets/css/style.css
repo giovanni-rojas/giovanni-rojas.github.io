@@ -305,3 +305,153 @@ section.resume-section .resume-item .resume-date {
     border-radius: 5px;
 
 }
+
+.project-subsection {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--color-base);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.project-subsection h3 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project-subsection p {
+    font-size: 1.2rem;
+    color: var(--color-body);
+}
+
+.video-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-brand);
+    text-decoration: none;
+    transition: color 0.3 ease;
+}
+
+.video-link:hover {
+    color: var(--color-brand3);
+}
+
+.embed-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-brand);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.embed-link:hover {
+    color: var(--color-brand3);
+}
+
+.project-git {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* The ratio class ensures responsiveness */
+.ratio {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional: If you need specific height control */
+.project-subsection .ratio {
+    max-width: 100%;
+    max-height: 500px; /* Adjust the height as needed */
+}
+
+.embed-responsive-item {
+    border: none;
+}
+
+/* Style for the collapsible dropdown link (make it look like the See More button) */
+.embed-link {
+    display: inline-block;
+    background-color: var(--color-brand);
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add space above the button */
+    margin-right: 10px; /* Add space between the buttons */
+}
+
+.embed-link:hover {
+    background-color: var(--color-brand3);
+    color: white;
+}
+
+/* Style for the 'See Code' link (already styled as button) */
+.code-link {
+    display: inline-block;
+    background-color: var(--color-brand);
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add space above the button */
+}
+
+.code-link:hover {
+    background-color: var(--color-brand3);
+    color: white;
+}
+.project-subsection p {
+    font-size: 1.25rem; /* Larger font size */
+    font-weight: 500; /* Slightly bolder text */
+    text-align: center;
+    color: var(--color-brand); /* Use the primary brand color */
+    line-height: 1.6; /* Improve readability with more line height */
+    margin-top: 15px; /* Add space above the paragraph */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    letter-spacing: 0.5px; /* Slight spacing between letters */
+}
+
+@media (max-width: 768px) {
+    .project-subsection p {
+        font-size: 1.1rem; /* Slightly smaller on mobile */
+    }
+}
