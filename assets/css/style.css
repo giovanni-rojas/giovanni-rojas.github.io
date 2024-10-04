@@ -203,7 +203,7 @@ img {
 
 /* CARD */
 .card-custom .card-custom-image {
-    overflow: hidden;
+    position: relative;
 }
 
 .card-custom .card-custom-image img {
@@ -454,4 +454,35 @@ section.resume-section .resume-item .resume-date {
     .project-subsection p {
         font-size: 1.1rem; /* Slightly smaller on mobile */
     }
+}
+
+.highlighted-link {
+    color: #ff5733; /* Change the color to make it stand out */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline the text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.highlighted-link:hover {
+    color: var(--color-brand3);
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
