@@ -495,3 +495,14 @@ section.resume-section .resume-item .resume-date {
     background-color: #433d3d7e;
     color: white;
 }
+
+footer {
+    background-color: #b1b1b8;
+    padding: 5px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #1d1f21;
+}
