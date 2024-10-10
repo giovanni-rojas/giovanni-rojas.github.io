@@ -506,3 +506,26 @@ footer p {
     margin: 0;
     color: #1d1f21;
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-buttons {
+    gap: 0px;
+}
+
+.button-container .embed-link,
+.button-container .link-custom {
+    margin-top: 10px;
+}
+
+.try-out-text::after {
+    content: " \25bc";
+}
+
+.see-website-text::after {
+    content: " ⤴";
+}
