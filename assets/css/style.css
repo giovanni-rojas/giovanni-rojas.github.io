@@ -119,11 +119,12 @@ img {
 }
 
 .shadow-effect {
-    transition: all 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .shadow-effect:hover {
-    box-shadow: -6px 6px 0 var(--color-brand);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(189, 93, 56, 0.35);
 }
 
 .iconbox {
@@ -239,18 +240,25 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+    overflow: visible;
+}
 
-  .col-md-4 {
+#projects .row.gy-4 {
+    overflow: visible;
+}
+
+.col-md-4 {
     flex: 1 1 calc(33.333% - 20px); /* Ensure each .col-md-4 takes one-third width */
     max-width: calc(33.333% - 20px);
     box-sizing: border-box;
     margin: 24px 10px;
-  }
-  
-  .card-custom {
+    overflow: visible;
+}
+
+.card-custom {
     height: 100%;
-  }
+    position: relative;
+}
   
   /* .card-custom-image img {
     width: 100%;
@@ -260,7 +268,7 @@ img {
   } */
 
   .card-custom-image {
-    height: 200px;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -271,6 +279,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     border-radius: inherit;
   }
   
@@ -278,12 +287,12 @@ img {
     /* text-align: center; */
   }
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .card-custom {
-      flex: 1 1 100%; /* Stacks cards on smaller screens */
-      max-width: 100%;
+        flex: 1 1 100%; /* Stacks cards on smaller screens */
+        max-width: 100%;
     }
-  }
+}
 
 /* SOCIAL ICONS */
 .list-social-icons a {
@@ -620,11 +629,13 @@ section.resume-section .resume-item .resume-date {
 .hidden {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
 }
 
 .visible {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    pointer-events: auto;
 }
 
 .message {
@@ -687,4 +698,196 @@ footer p {
 
 .card-link:hover {
     color: inherit; /* Prevent color change on hover */
-  }
+}
+
+/* --- Large Screens (>= 1700px) --- */
+@media (min-width: 1700px) {
+    #home .display-1 {
+        font-size: 6rem;
+    }
+
+    #home .subheading {
+        font-size: 1.6rem;
+    }
+
+    #home .lead {
+        font-size: 1.6rem;
+    }
+
+    #home .list-social-icons .la-lg {
+        font-size: 3rem;
+    }
+
+    .project-subsection {
+        padding: 16px;
+        margin-bottom: 30px;
+    }
+
+    .project-subsection h3 {
+        font-size: 2.8rem;
+    }
+
+    .project-subsection p {
+        font-size: 1.3rem;
+    }
+
+    .project-gif {
+        max-height: 600px;
+        object-fit: cover;
+    }
+
+    .col-md-4 {
+        margin: 18px 8px;
+    }
+
+    .card-custom-content {
+        padding: 0.75rem !important;
+    }
+
+    .card-custom-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-custom-content p {
+        font-size: 1.1rem;
+    }
+
+    #experience h3 {
+        font-size: 2.2rem;
+    }
+
+    #experience .subheading {
+        font-size: 1.5rem;
+    }
+
+    #experience .resume-date span {
+        font-size: 1.2rem;
+    }
+
+    #education h3 {
+        font-size: 2.5rem;
+    }
+
+    #education .subheading {
+        font-size: 1.85rem;
+    }
+
+    #education li {
+        font-size: 1.35rem;
+    }
+
+    #education .company-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    #skills .skill-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #skills h5 {
+        font-size: 1.5rem;
+    }
+
+    #skills .list-icons {
+        padding-bottom: 0.75rem !important;
+    }
+
+    #interests .display-2 {
+        font-size: 4rem;
+    }
+
+    #interests .lead {
+        font-size: 1.5rem;
+    }
+
+    #interests .photo-container .box .dream img {
+        padding-bottom: 10px;
+    }
+}
+
+/* --- Medium Screens (1700px - 1699px) --- */
+@media (min-width: 1300px) and (max-width: 1699px) {
+    #experience h3 {
+        font-size: 1.8rem;
+    }
+
+    #experience .subheading {
+        font-size: 1.4rem;
+    }
+
+    #experience li {
+        font-size: 0.9rem;
+    }
+
+    #experience .resume-date span {
+        font-size: 1.1rem;
+    }
+
+    #education h3 {
+        font-size: 2.5rem;
+    }
+
+    #education .subheading {
+        font-size: 1.85rem;
+    }
+
+    #education li {
+        font-size: 1.2rem;
+    }
+
+    #education .company-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    #skills .skill-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    #skills h5 {
+        font-size: 1.4rem;
+    }
+
+    #skills .list-icons {
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+/* --- Small Screens (992px - 1299px) --- */
+@media (min-width: 992px) and (max-width: 1299px) {
+    h1 {
+        font-size: 0.6rem;
+    }
+
+    #experience h3 {
+        font-size: 1.8rem;
+    }
+
+    #experience .subheading {
+        font-size: 1.3rem;
+    }
+
+    #experience li {
+        font-size: 0.75rem;
+    }
+
+    #experience .resume-date span {
+        font-size: 1.1rem;
+    }
+
+    #skills .skill-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    #skills h5 {
+        font-size: 1.2rem;
+    }
+
+    #skills .list-icons {
+        padding-bottom: 0.2rem !important;
+    }
+}
